@@ -11,6 +11,7 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
 
         .container {
@@ -51,7 +52,24 @@
             text-decoration: underline;
         }
 
-        /* Additional sections styling (education, about, etc.) can be added similarly */
+        section {
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            margin-top: 0;
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        section p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
 
         footer {
             text-align: center;
@@ -61,6 +79,19 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-text h1 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
@@ -101,15 +132,75 @@
         </div>
     </section>
 
-    <!-- Add sections for Internships, Projects, Publications, Seminars, etc. -->
+    <section class="internships">
+        <div class="container">
+            <h2>Internships</h2>
+            <p><strong>VibrantMinds Technologies Pvt Ltd</strong><br>
+            Software Development Intern<br>
+            June 2023 - January 2024<br>
+            Key Skills: Java, Team Management</p>
+            <p>Worked on developing a mobile application for a food delivery service. Responsibilities included writing code, implementing features, and resolving bugs to meet project requirements.</p>
+            <p><strong>BIT HUB TECHNOLOGY PUNE</strong><br>
+            Data Science Intern<br>
+            January 2022 - March 2022<br>
+            Key Skills: Python, Data Science, Problem Solving</p>
+            <p>Contributed to a fake news detection system project, focusing on data preprocessing, feature engineering, and enhancing machine learning models for improved accuracy.</p>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <p><strong>Opinion Mining of Sanskrit Language Text Using Hybrid Approach</strong><br>
+            Mentor: Prof. V. M. Lomte | Team Size: 4<br>
+            Developed a machine learning project for character recognition and translation of Sanskrit text using image processing techniques.</p>
+        </div>
+    </section>
+
+    <section class="publications">
+        <div class="container">
+            <h2>Publications / Research / White Papers</h2>
+            <p><strong>Sanskrit Text Recognition using Machine Learning</strong><br>
+            Published in International Journal of Advanced Research in Science, Communication and Technology (IJARSCT)<br>
+            May 16, 2023 | Mentor: Prof. V. M. Lomte | No. of Authors: 5</p>
+        </div>
+    </section>
+
+    <section class="seminars">
+        <div class="container">
+            <h2>Seminars / Trainings / Workshops</h2>
+            <p><strong>Diploma in Advance Computing</strong><br>
+            Centre For Development of Advanced Computing, Bengaluru<br>
+            March 2024 - August 2024<br>
+            Currently pursuing advanced studies in programming, software engineering, and system architecture.</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <p>C, C++, Java, HTML, CSS, JavaScript, SQL, Git and GitHub</p>
+        </div>
+    </section>
+
+    <section class="activities">
+        <div class="container">
+            <h2>Co-curricular Activities</h2>
+            <p>Volunteering, Yoga, Sports</p>
+        </div>
+    </section>
+
+    <section class="interests">
+        <div class="container">
+            <h2>Personal Interests / Hobbies</h2>
+            <p>Playing Cricket, Listening to Music, Travelling</p>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
             <p>&copy; 2024 Pratik Bhagwat Gitte. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
-
