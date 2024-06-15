@@ -6,6 +6,6 @@ Welcome to my portfolio website hosted on GitHub! I've designed this site to sho
 
 **Technologies Used:**
 - HTML
-- CSS (inline)
-- JavaScript (minimal)
+- CSS 
+- JavaScript 
 
