@@ -79,6 +79,7 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+            z-index: 1000; /* Ensures footer is above other content */
         }
 
         /* Responsive Design */
@@ -92,6 +93,12 @@
             .hero-text h1 {
                 font-size: 2em;
             }
+        }
+
+        /* Scrollable Section */
+        .scrollable-section {
+            max-height: calc(100vh - 170px); /* Adjust based on header and footer height */
+            overflow-y: auto;
         }
     </style>
 </head>
@@ -167,7 +174,7 @@
         </div>
     </section>
 
-    <section class="seminars">
+    <section class="seminars scrollable-section">
         <div class="container">
             <h2>Seminars / Trainings / Workshops</h2>
             <p><strong>Diploma in Advance Computing</strong><br>
@@ -189,7 +196,9 @@
     <section class="activities">
         <div class="container">
             <h2>Co-curricular Activities</h2>
-            <p>Volunteering, Yoga, Sports</p>
+            <p>NSS - Organised And Participated in Blood Donation Camps</p>
+            <p>Elementary Grade Drawing Examination</p>
+            <!-- Add more activities as needed -->
         </div>
     </section>
 
